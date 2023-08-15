@@ -9,7 +9,7 @@ contract FallBackScript is Script {
 
     function setUp() public {
         deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        fallBackAddress = 0xdf4B4bE8dE3fB59fb696765207d60fa36126aA78;
+        fallBackAddress = vm.envAddress("FALLBACK_ADDRESS");
     }
 
     function run() public {
